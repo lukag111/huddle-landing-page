@@ -1,0 +1,303 @@
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+ - Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+ */
+
+body {
+    margin: 0;
+
+}
+
+.container {
+    /* 1140px */
+    max-width: 120rem;
+    padding: 0 ;
+    margin: 0 ;
+    position: absolute;
+}
+
+
+.grid-2-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.hero{
+    padding: 24px;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url("images/bg-hero-desktop.svg");
+    background-size: cover;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding:36px 60px 54px 50px;
+
+}
+.hero-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 35px;
+
+}
+
+.center-right img{
+    width: 100%;
+}
+
+.center-left{
+    display: flex;
+    flex-direction: column;
+
+    padding: 32px 50px;
+}
+
+.heading{
+    font-weight: 700;
+    line-height: 1.6;
+
+}
+
+.subheading{
+    font-weight: 400;
+
+}
+
+.btn-nav{
+    font-weight: 700;
+    color: #333;
+    padding: 15px 65px;
+    background-color: #FFF;
+    border-radius: 50px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    text-decoration: none;
+    justify-items: left;
+    transition: all 0.5s;
+
+}
+
+.subheading{
+    font-size: 20px;
+    padding: 20px 0;
+}
+/* !!!!!! */
+.btn-hero{
+    font-weight: 700;
+    color: #EEEEEE;
+    background-color: hsl(322, 100%, 66%);
+    padding: 20px 40px;
+    border-radius: 50px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 100px;
+    transition: all 0.5s;
+
+}
+.second{
+    padding: 35px 100px;
+}
+.box{
+    border-radius: 10px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    padding: 40px 20px ;
+    margin-bottom: 80px;
+}
+
+.box img{
+    width: 75%;
+
+}
+
+.box-left{
+    padding: 50px;
+    align-self: center;
+
+
+}
+
+.box-left h2{
+    font-weight: 700;
+
+}
+
+.cta{
+    border-radius: 10px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    position:relative;
+    margin: 50px 300px -100px;
+    background-color: #FFFFFF;
+    padding: 50px 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.cta-heading{
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.btn-cta{
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: hsl(322, 100%, 66%);
+    padding: 15px 90px;
+    border-radius: 50px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.footer{
+    background-color: hsl(192, 100%, 9%);
+    top: 1rem;
+    padding: 150px 100px 50px 100px;
+
+}
+.footer-logo{
+    filter: brightness(0) invert(1);
+}
+
+.footer-items{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 30px;
+
+}
+.adress,.col1,.col2,.col3{
+    list-style: none;
+    color: #EEE;
+    padding: 0;
+}
+.adress li{
+    margin-right: 10px;
+
+}
+.item{
+    padding: 7px 10px;
+}
+svg{
+    padding: 0 10px;
+}
+.copy{
+    font-size: 10px;
+    color: #EEEEEE;
+    text-align: right;
+}
+.col3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+    margin: 16px 10px;
+}
+
+.col3 svg{
+    fill: #EEEEEE;
+}
+
+.btn-nav:hover{
+    color: grey;
+}
+
+.btn-hero:hover{
+    background-color: hsla(322, 100%, 66%, 0.77);
+}
+
+.btn-cta:hover{
+    background-color: hsla(322, 100%, 66%, 0.77);
+}
+
+.ionicon1:hover{
+    fill: hsl(322, 100%, 66%);
+}
+
+.bord:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 375px) {
+    body{
+        font-size: 13px;
+        width: 100%;
+
+    }
+    .container{
+
+    }
+    .hero{
+        background-image: url("images/bg-hero-mobile.svg");
+        background-size: cover;
+    }
+
+    .btn-hero{
+        font-size: 10px;
+        padding: 10px 50px;
+        margin: 10px 20px;
+    }
+
+    .nav{
+        justify-content: space-between;
+    }
+    .center-right{
+        width: 70%;
+    }
+    .center-left{
+        padding: 0;
+    }
+
+    .nav-logo{
+        width: 1%;
+        padding: 0;
+    }
+    .btn-nav{
+        font-size: 10px;
+        font-weight: 700;
+        padding: 10px 40px;
+    }
+
+    .hero-center{
+        grid-template-columns:1fr;
+
+    }
+
+    .grid-2-col{
+        grid-template-columns: 1fr;
+    }
+    .box{
+        width: 100%;
+    }
+    .second{
+        padding: 50px 10px;
+
+    }
+    .box img{
+        grid-row: 1 ;
+    }
+
+    .cta{
+        margin: 30px 10px -100px;
+    }
+    .footer-items{
+        grid-template-columns: 1fr;
+
+    }
+
+}
